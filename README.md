@@ -8,7 +8,7 @@ I am a recent graduate from Mahasarakham University who enjoys coding and proble
 
 * 🌍  I'm based in Mahasarakham
 * ✉️  You can contact me at [patsarun2545@gmail.com](mailto:patsarun2545@gmail.com)
-* 🧠  I'm learning React.js, Next.js, Javascript, Typescript, Go
+* 🧠  I'm learning React.js, Next.js, Javascript, Typescript, Go, java spring boot
 
 ### Skills
 
