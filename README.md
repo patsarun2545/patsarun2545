@@ -73,6 +73,17 @@
 
 <br/>
 
+### 🌐 Portfolio Website
+> `React · Vite` &nbsp;·&nbsp; [patsarun2545.github.io/profile](https://patsarun2545.github.io/profile/)
+
+Personal portfolio showcasing projects, skills, and professional background — deployed via GitHub Pages.
+
+<p>
+  <img src="https://skillicons.dev/icons?i=react,vite,github" />
+</p>
+
+<br/>
+
 ### 🎓 Online Dress Rental System &nbsp;·&nbsp; *Graduation Project*
 > `PERN Stack` &nbsp;·&nbsp; Dec 2024 – Feb 2025
 
