@@ -10,15 +10,15 @@
 
 <p align="center">
   <a href="https://www.linkedin.com/in/patsarun-kathinthong">
-    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white"/>
+    <img src="https://img.shields.io/badge/LinkedIn-patsarun--kathinthong-0A66C2?style=flat-square&logo=linkedin&logoColor=white"/>
   </a>
   &nbsp;
   <a href="https://github.com/patsarun2545">
-    <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white"/>
+    <img src="https://img.shields.io/badge/GitHub-patsarun2545-181717?style=flat-square&logo=github&logoColor=white"/>
   </a>
   &nbsp;
   <a href="mailto:patsarun2545@gmail.com">
-    <img src="https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white"/>
+    <img src="https://img.shields.io/badge/Email-patsarun2545@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white"/>
   </a>
 </p>
 
