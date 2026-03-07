@@ -1,138 +1,112 @@
-<h1 align="center">
-Hi 👋 I'm Patsarun Kathinthong
-</h1>
-
-<h3 align="center">
-Full Stack Developer | PERN / MERN Stack
-</h3>
+<h1 align="center">Patsarun Kathinthong</h1>
 
 <p align="center">
-Building scalable web applications, RESTful APIs, and modern full-stack systems
+  <b>Full Stack Developer</b> &nbsp;·&nbsp; PERN &nbsp;/&nbsp; MERN Stack
 </p>
-
----
-
-## 👨‍💻 About Me
-
-* 🌍 Based in **Bangkok, Thailand**
-* 🎓 Business Computer – Mahasarakham University
-* 💻 Full Stack Developer specializing in **PERN / MERN Stack**
-* 🔐 Experienced in **JWT Authentication & Role-Based Access Control**
-* 🧠 Currently learning **System Architecture, NestJS, and Advanced Backend**
-* 🤝 Open to **Full Stack, SaaS, and Open Source Projects**
-
----
-
-## 🚀 Tech Stack
-
-### Languages
-
-<p>
-<img src="https://skillicons.dev/icons?i=js,ts,python,html,css,sql"/>
-</p>
-
-### Frontend
-
-<p>
-<img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,bootstrap"/>
-</p>
-
-### Backend
-
-<p>
-<img src="https://skillicons.dev/icons?i=nodejs,express,nestjs"/>
-</p>
-
-### Database
-
-<p>
-<img src="https://skillicons.dev/icons?i=postgres,mongodb,mysql"/>
-</p>
-
-### Tools & Platforms
-
-<p>
-<img src="https://skillicons.dev/icons?i=git,github,postman,ubuntu,vscode"/>
-</p>
-
----
-
-# 📂 Featured Projects
-
-## 🎓 Online Dress Rental System (Graduation Project)
-
-Full stack dress rental management system built with **PERN Stack**
-
-Features
-
-* User authentication (JWT)
-* Dress booking & reservation system
-* Rental workflow management
-* Prevent double booking logic
-* PostgreSQL relational database design
-* RESTful API architecture
-
-Tech Stack
-
-React
-Node.js
-Express.js
-PostgreSQL
-Prisma ORM
-
----
-
-## 🛒 Mobile Shop Management System
-
-Store management system built with **Next.js + MongoDB**
-
-Features
-
-* Product management
-* Order management
-* JWT authentication
-* Responsive admin dashboard
-* RESTful API backend
-
-Tech Stack
-
-Next.js
-Node.js
-MongoDB
-TailwindCSS
-
----
-
-# 📊 GitHub Stats
 
 <p align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=patsarun2545&show_icons=true&theme=tokyonight&hide_border=true"/>
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=patsarun2545&theme=tokyonight&hide_border=true"/>
-
+  Building scalable web applications, secure RESTful APIs, and clean full-stack systems
 </p>
-
----
-
-# 🌐 Connect With Me
 
 <p align="center">
-
-<a href="mailto:patsarun2545@gmail.com">
-<img src="https://img.shields.io/badge/email-contact-red"/>
-</a>
-
-<a href="https://github.com/patsarun2545">
-<img src="https://img.shields.io/badge/github-profile-black"/>
-</a>
-
-<a href="https://www.linkedin.com/in/patsarun-kathinthong">
-<img src="https://img.shields.io/badge/linkedin-connect-blue"/>
-</a>
-
+  <a href="https://www.linkedin.com/in/patsarun-kathinthong">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white"/>
+  </a>
+  &nbsp;
+  <a href="https://github.com/patsarun2545">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white"/>
+  </a>
+  &nbsp;
+  <a href="mailto:patsarun2545@gmail.com">
+    <img src="https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white"/>
+  </a>
 </p>
+
+<br/>
 
 ---
 
-⭐ From [patsarun2545](https://github.com/patsarun2545)
+## About Me
+
+- 🌍 Based in **Bangkok, Thailand**
+- 🎓 Business Computer — Mahasarakham University *(2021–2025)*
+- 🔐 Experienced in **JWT Authentication & Role-Based Access Control**
+- 🧠 Currently learning **NestJS · System Architecture · Advanced Backend**
+- 🤝 Open to **Full Stack · SaaS · Open Source** collaborations
+
+<br/>
+
+---
+
+## Tech Stack
+
+**Languages**
+<p>
+  <img src="https://skillicons.dev/icons?i=js,ts,python,html,css" />
+</p>
+
+**Frontend**
+<p>
+  <img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,bootstrap,mui" />
+</p>
+
+**Backend**
+<p>
+  <img src="https://skillicons.dev/icons?i=nodejs,express,nestjs" />
+</p>
+
+**Database**
+<p>
+  <img src="https://skillicons.dev/icons?i=postgres,mongodb,mysql,prisma" />
+</p>
+
+**Tools & Platforms**
+<p>
+  <img src="https://skillicons.dev/icons?i=git,github,postman,ubuntu,vscode,figma,azure" />
+</p>
+
+<br/>
+
+---
+
+## Featured Projects
+
+<br/>
+
+### 🎓 Online Dress Rental System &nbsp;·&nbsp; *Graduation Project*
+> `PERN Stack` &nbsp;·&nbsp; Dec 2024 – Feb 2025
+
+Full-stack dress rental management platform with end-to-end booking workflows and role-based access control.
+
+- JWT authentication with role-based authorization middleware
+- Optimized PostgreSQL schema for booking and reservation management
+- RESTful APIs for users, products, and reservations
+- Double-booking prevention via server-side conflict-checking logic
+
+<p>
+  <img src="https://skillicons.dev/icons?i=react,nodejs,express,postgres,prisma" />
+</p>
+
+<br/>
+
+### 🛒 Mobile Shop Management System
+> `Next.js · MongoDB · Ubuntu` &nbsp;·&nbsp; Jul 2024 – Oct 2024
+
+Responsive store management web application deployed and maintained on a Linux server.
+
+- Responsive admin dashboard built with Next.js and Tailwind CSS
+- MongoDB schema optimized for product and order management
+- RESTful APIs with JWT-based authorization middleware
+- Deployed on Ubuntu Linux using PM2 process manager
+
+<p>
+  <img src="https://skillicons.dev/icons?i=nextjs,nodejs,mongodb,tailwind,ubuntu" />
+</p>
+
+<br/>
+
+---
+
+<p align="center">
+  <sub>⭐ From <a href="https://github.com/patsarun2545">patsarun2545</a></sub>
+</p>
