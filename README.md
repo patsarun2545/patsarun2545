@@ -66,28 +66,37 @@ Back-office system for managing the full rental lifecycle — booking, payments,
 ### 🎓 Online Dress Rental System *(Graduation Project)*
 `PERN Stack` · Dec 2024 – Feb 2025
 
-Full-stack rental management platform with end-to-end booking and role-based access control.
+Full-stack dress rental platform with Customer App and Admin Panel — end-to-end booking workflows and role-based access control.
 
-- JWT authentication with role-based authorization middleware
-- PostgreSQL schema optimized for concurrent booking and reservation management
-- Server-side conflict-checking logic to prevent double-booking
-- RESTful APIs for users, products, and reservations
+**What makes it interesting:**
+- Dual-frontend architecture: Customer App + Admin Panel, each with independent RBAC via JWT middleware
+- PostgreSQL schema supporting full rental lifecycle: `PENDING → CONFIRMED → ACTIVE → RETURNED → COMPLETED` with auto `LATE` flagging
+- RESTful APIs covering products, rentals, payments, deposits, penalties, returns, and audit logs
+- Payment slip upload and verification flow — admins approve or reject customer-submitted evidence
+- Deposit lifecycle: `HELD / REFUNDED / DEDUCTED` states with partial deduction support
+- Stock reservation conflict-checking to prevent double-booking across rental date ranges
+- Customer-facing cart with configurable rental duration, auto return date calculation, discount, and shipping fee summary
 
-`React` `Node.js` `Express` `PostgreSQL` `Prisma`
+`React` `Node.js` `Express` `PostgreSQL` `Prisma` `JWT` `RBAC`
 
 ---
 
 ### 🛒 Mobile Shop Management System
 `MERN Stack` · Jul 2024 – Oct 2024
 
-Responsive store management system deployed and maintained on a Linux server.
+Responsive store management web app for mobile phone retail — stock, sales, and repair workflows deployed on Linux.
 
-- Admin dashboard built with Next.js and Tailwind CSS
-- MongoDB schema designed for product catalog and order management
-- JWT-based authorization middleware across all protected routes
-- Deployed on Ubuntu using PM2 process manager for uptime reliability
+**What makes it interesting:**
+- Built with Next.js 14 (App Router), TypeScript, and Tailwind CSS
+- MongoDB schema via Prisma ORM covering products, sell orders, service/repair jobs, users, and company settings
+- Sell workflow: serial number lookup → pending sell list → bulk confirm → products marked as sold
+- Bulk stock entry supporting up to 10,000 units per transaction with soft-delete for products and users
+- RESTful APIs for stock management, sell workflow, repair/service jobs, and user administration
+- JWT-based middleware with role-based access levels (admin / user)
+- Dashboard: total income, total sales, total repair jobs, and monthly income bar chart via Recharts
+- Deployed on Ubuntu Linux using PM2 for process management
 
-`Next.js` `Node.js` `MongoDB` `Tailwind CSS` `Ubuntu`
+`Next.js` `Node.js` `MongoDB` `Prisma` `TypeScript` `Tailwind CSS` `Ubuntu` `PM2`
 
 ---
 
