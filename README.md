@@ -84,6 +84,26 @@ Personal portfolio showcasing projects, skills, and professional background — 
 
 <br/>
 
+### 🖥️ Dress Rental — Admin Panel
+> `PERN Stack` &nbsp;·&nbsp; Feb 2026
+
+Dedicated back-office system for managing the full rental lifecycle — from booking confirmation to deposit settlement and penalty invoicing.
+
+- RBAC restricting admin-only access to the back office panel
+- Multi-step rental workflow: PENDING → CONFIRMED → ACTIVE → RETURNED → COMPLETED
+- Payment slip verification — approve or reject customer-uploaded evidence
+- Deposit lifecycle management with HELD / REFUNDED / DEDUCTED states
+- Penalty management (LATE / DAMAGE / LOST) with automatic invoice generation
+- Stock reservation conflict-checking to prevent double-booking across date ranges
+- Reporting dashboard: monthly revenue chart, top-10 products, overdue tracking
+- Audit Log module for tracking all admin actions with date-range cleanup support
+
+<p>
+  <img src="https://skillicons.dev/icons?i=react,nodejs,express,postgres,prisma" />
+</p>
+
+<br/>
+
 ### 🎓 Online Dress Rental System &nbsp;·&nbsp; *Graduation Project*
 > `PERN Stack` &nbsp;·&nbsp; Dec 2024 – Feb 2025
 
