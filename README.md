@@ -44,7 +44,7 @@ I focus on building systems with real complexity: multi-role access control, sta
 
 ## Projects
 
-### 🖥️ Dress Rental — Admin Panel
+### 🖥️ Rental Management System
 `PERN Stack` · Feb 2026
 
 Back-office system for managing the full rental lifecycle — booking, payments, deposits, and penalties.
@@ -63,7 +63,7 @@ Back-office system for managing the full rental lifecycle — booking, payments,
 
 ---
 
-### 🎓 Online Dress Rental System *(Graduation Project)*
+### 🎓 Dress Rental Web *(Graduation Project)*
 `PERN Stack` · Dec 2024 – Feb 2025
 
 Full-stack dress rental platform with Customer App and Admin Panel — end-to-end booking workflows and role-based access control.
@@ -81,7 +81,7 @@ Full-stack dress rental platform with Customer App and Admin Panel — end-to-en
 
 ---
 
-### 🛒 Mobile Shop Management System
+### 🛒 Mobile Store Web
 `MERN Stack` · Jul 2024 – Oct 2024
 
 Responsive store management web app for mobile phone retail — stock, sales, and repair workflows deployed on Linux.
