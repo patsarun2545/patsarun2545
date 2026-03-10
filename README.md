@@ -33,7 +33,7 @@ I focus on building systems with real complexity: multi-role access control, sta
 
 | Layer | Technologies |
 |---|---|
-| **Languages** | JavaScript · TypeScript · Python · HTML/CSS |
+| **Languages** | JavaScript · TypeScript · Python · SQL · HTML/CSS |
 | **Frontend** | React · Next.js · Tailwind CSS · Bootstrap · MUI |
 | **Backend** | Node.js · Express · NestJS |
 | **Database** | PostgreSQL · MongoDB · MySQL · Prisma ORM |
