@@ -55,7 +55,7 @@ Back-office system for managing the full rental lifecycle — booking, payments,
 - Deposit state machine: `HELD / REFUNDED / DEDUCTED` with automatic calculation
 - Penalty module covering `LATE / DAMAGE / LOST` with auto-generated invoices
 - Stock conflict-checking to prevent double-booking across overlapping date ranges
-- Reporting dashboard: monthly revenue, top-10 products, overdue rentals
+- Reports module: monthly revenue chart, top-10 rented products, overdue rental tracking
 - Audit Log with date-range cleanup — full traceability of admin actions
 - RBAC middleware restricting all back-office routes to admin roles only
 
@@ -92,8 +92,8 @@ Responsive store management web app for mobile phone retail — stock, sales, an
 - Sell workflow: serial number lookup → pending sell list → bulk confirm → products marked as sold
 - Bulk stock entry supporting up to 10,000 units per transaction with soft-delete for products and users
 - RESTful APIs for stock management, sell workflow, repair/service jobs, and user administration
-- JWT-based middleware with role-based access levels (admin / user)
-- Dashboard: total income, total sales, total repair jobs, and monthly income bar chart via Recharts
+- JWT-based authentication with role-based access levels (admin / user)
+- Dashboard with summary stats: total income, total sales count, and total repair jobs
 - Deployed on Ubuntu Linux using PM2 for process management
 
 `Next.js` `Node.js` `MongoDB` `Prisma` `TypeScript` `Tailwind CSS` `Ubuntu` `PM2`
