@@ -47,7 +47,7 @@ I focus on building systems with real complexity: multi-role access control, sta
 ### 🖥️ Rental Management System
 `PERN Stack` · Feb 2026
 
-Back-office system for managing the full rental lifecycle — booking, payments, deposits, and penalties.
+Back-office admin panel for managing the full rental lifecycle — booking, payments, deposits, and penalties.
 
 **What makes it interesting:**
 - Multi-step workflow engine: `PENDING → CONFIRMED → ACTIVE → RETURNED → COMPLETED`
@@ -69,15 +69,16 @@ Back-office system for managing the full rental lifecycle — booking, payments,
 Full-stack dress rental platform with Customer App and Admin Panel — end-to-end booking workflows and role-based access control.
 
 **What makes it interesting:**
-- Dual-frontend architecture: Customer App + Admin Panel, each with independent RBAC via JWT middleware
-- PostgreSQL schema supporting full rental lifecycle: `PENDING → CONFIRMED → ACTIVE → RETURNED → COMPLETED` with auto `LATE` flagging
+- Dual-frontend architecture: Customer App + Admin Panel, each with independent role-based access (owner / use) via JWT middleware
+- PostgreSQL schema supporting full rental lifecycle: `PENDING → CONFIRMED → ACTIVE → RETURNED → COMPLETED`
 - RESTful APIs covering products, rentals, payments, deposits, penalties, returns, and audit logs
 - Payment slip upload and verification flow — admins approve or reject customer-submitted evidence
 - Deposit lifecycle: `HELD / REFUNDED / DEDUCTED` states with partial deduction support
 - Stock reservation conflict-checking to prevent double-booking across rental date ranges
 - Customer-facing cart with configurable rental duration, auto return date calculation, discount, and shipping fee summary
+- Admin panel supports bulk product and category import via Excel
 
-`React` `Node.js` `Express` `PostgreSQL` `Prisma` `JWT` `RBAC`
+`React` `Node.js` `Express` `PostgreSQL` `Prisma` `JWT`
 
 ---
 
@@ -92,7 +93,7 @@ Responsive store management web app for mobile phone retail — stock, sales, an
 - Sell workflow: serial number lookup → pending sell list → bulk confirm → products marked as sold
 - Bulk stock entry supporting up to 10,000 units per transaction with soft-delete for products and users
 - RESTful APIs for stock management, sell workflow, repair/service jobs, and user administration
-- JWT-based authentication with role-based access levels (admin / user)
+- JWT-based authentication with admin / user role levels (auth decoded per-controller, not global middleware)
 - Dashboard with summary stats: total income, total sales count, and total repair jobs
 - Deployed on Ubuntu Linux using PM2 for process management
 
