@@ -48,6 +48,8 @@ I focus on building systems with real complexity: multi-role access control, sta
 
 `Next.js Fullstack` · Mar 2026
 
+[![Live Demo](https://img.shields.io/badge/Live-Demo-000?style=flat-square&logo=vercel&logoColor=white)](https://nextjs-ecommerce-platform-gamma.vercel.app/)
+
 Full-stack e-commerce system built with **Next.js App Router**, combining frontend and backend in a single architecture with customer and admin experiences.
 
 **What makes it interesting:**
@@ -71,6 +73,8 @@ Full-stack e-commerce system built with **Next.js App Router**, combining fronte
 ### 🖥️ Rental Management System
 
 `PERN Stack` · Feb 2026
+
+[![Live Demo](https://img.shields.io/badge/Live-Demo-000?style=flat-square&logo=vercel&logoColor=white)](https://rental-management-system-blush.vercel.app/)
 
 Back-office admin panel for managing the full rental lifecycle — booking, payments, deposits, and penalties.
 
