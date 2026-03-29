@@ -97,6 +97,9 @@ Back-office admin panel for managing the full rental lifecycle — booking, paym
 
 `PERN Stack` · Dec 2024 – Feb 2025
 
+[![User Demo](https://img.shields.io/badge/User-Demo-000?style=flat-square&logo=vercel&logoColor=white)](https://dress-rental-web-wtnm.vercel.app/)  
+[![Admin Demo](https://img.shields.io/badge/Admin-Demo-000?style=flat-square&logo=vercel&logoColor=white)](https://dress-rental-web.vercel.app/)
+
 Full-stack rental platform with Customer App and Admin Panel.
 
 **What makes it interesting:**
