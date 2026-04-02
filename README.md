@@ -19,7 +19,7 @@
 
 Full Stack Developer based in **Bangkok, Thailand**, with hands-on experience shipping complete web systems — from database schema design to frontend UI.
 
-I focus on building systems with real complexity: multi-role access control, stateful workflows, conflict-checking logic, and automated processes. My projects go beyond CRUD — solving real business problems such as rental lifecycle management, payment verification, and stock reservation systems.
+I focus on building systems with real complexity: multi-role access control, stateful workflows, conflict-checking logic, and automated processes. My projects go beyond CRUD — solving real business problems such as rental lifecycle management, payment verification, stock reservation systems, and repair workflow tracking.
 
 * 🎓 **Business Computer** — Mahasarakham University (2021–2025)
 * 🔐 Experienced in **JWT Auth, RBAC, RESTful API design**
@@ -56,17 +56,17 @@ Full-stack e-commerce system built with **Next.js App Router**, combining fronte
 
 * Fullstack architecture using Next.js (Server Actions + Route Handlers) — no separate backend service
 * Role-based system: `CUSTOMER` / `ADMIN` with protected routes
-* Shopping cart with real-time calculation and checkout flow
-* Order lifecycle: `PENDING → PAID → SHIPPED → DELIVERED`
+* Shopping cart with optimistic UI updates and real-time calculation
+* Order lifecycle: `PENDING → PAID → SHIPPED → DELIVERED` with status history
 * Payment slip upload with admin verification
 * PromptPay QR code generation for payments
-* Admin dashboard with revenue charts and order management
+* Admin dashboard with revenue stats, growth indicators, and stale-order alerts
 * Product & category soft-delete / restore system
-* Image management via ImageKit CDN
-* Server-side rendering (SSR) with caching & revalidation
-* Input validation using Zod and secure JWT authentication
+* Multi-image upload with main image selection via ImageKit CDN + Sharp processing
+* Server-side caching (`"use cache"`) with tag-based revalidation across products, orders, users, and cart
+* Input validation using Zod and secure JWT (HTTP-only cookie) authentication
 
-`Next.js` `React` `PostgreSQL` `Prisma` `Tailwind CSS` `JWT`
+`Next.js` `React` `TypeScript` `PostgreSQL` `Prisma` `Tailwind CSS` `JWT` `ImageKit` `Zod`
 
 ---
 
@@ -81,57 +81,62 @@ Back-office admin panel for managing the full rental lifecycle — booking, paym
 **What makes it interesting:**
 
 * Multi-step workflow engine: `PENDING → CONFIRMED → ACTIVE → RETURNED → COMPLETED`
-* Payment slip verification with approve/reject logic
-* Deposit state machine: `HELD / REFUNDED / DEDUCTED`
-* Penalty module: `LATE / DAMAGE / LOST` with invoice generation
-* Stock conflict-checking across overlapping date ranges
-* Reports: revenue charts, top products, overdue tracking
-* Audit log system with cleanup support
-* RBAC middleware restricting admin access
+* Payment slip verification with approve/reject logic — uses **PostgreSQL row-level locks** (`FOR UPDATE`, `pg_advisory_xact_lock`) to prevent race conditions on concurrent approvals
+* Deposit state machine: `HELD / REFUNDED / DEDUCTED` with partial refund and deduction support
+* Penalty module: `LATE / DAMAGE / LOST` with auto-generated invoices (`INV-YYYYMMDD-XXXX`)
+* Stock reservation conflict-checking across overlapping date ranges with emergency release
+* Reports: monthly revenue charts (last 12 months), top 10 products, overdue tracking
+* Audit log system with admin action tracking and cleanup support
+* RBAC middleware restricting admin-only access
 
-`React` `Node.js` `Express` `PostgreSQL` `Prisma`
+`React` `Node.js` `Express` `PostgreSQL` `Prisma` `JWT`
 
 ---
 
-### 🎓 Dress Rental Web *(Graduation Project)*
+### 👗 ChicBorrow — Dress Rental Web *(Graduation Project)*
 
 `PERN Stack` · Dec 2024 – Feb 2025
 
 [![User Demo](https://img.shields.io/badge/User-Demo-000?style=flat-square&logo=vercel&logoColor=white)](https://dress-rental-web-wtnm.vercel.app/)
 [![Admin Demo](https://img.shields.io/badge/Admin-Demo-000?style=flat-square&logo=vercel&logoColor=white)](https://dress-rental-web.vercel.app/)
 
-Full-stack rental platform with Customer App and Admin Panel.
+Full-stack rental platform with a Customer App and an Admin Panel — dual codebase, dual role system.
 
 **What makes it interesting:**
 
-* Dual-role system (Customer / Admin)
-* Full rental lifecycle system
-* Payment verification flow
-* Deposit & penalty management
-* Stock reservation conflict-checking
-* Cart with rental duration calculation
-* Bulk import via Excel
+* Dual-role system: Customer App (React) + Admin Panel (React) as separate frontends
+* Full rental lifecycle with status tracking: `wait → pay → send → cancel`
+* Return workflow with return status: `pending → Waitingtocheck → approved / rejected / overdue`
+* Payment slip upload and shipping proof image management
+* Cart with rental duration selection, discount calculation, and auto-return date computation
+* Shop bank accounts displayed at checkout with transfer info submission
+* Wishlist using localStorage (no login required to save items)
+* Product image gallery with multi-image upload
+* **Bulk import via Excel** (products and categories via ExcelJS)
+* Admin dashboard with Bar/Line chart toggle (Chart.js) and 10 summary metric cards
+* Deployed on Ubuntu Linux with PM2
 
-`React` `Node.js` `Express` `PostgreSQL` `Prisma` `JWT`
+`React` `Node.js` `Express` `PostgreSQL` `Prisma` `JWT` `Chart.js` `ExcelJS`
 
 ---
 
-### 🛒 Mobile Store Web
+### 📱 Mobile Store Web
 
 `MERN Stack` · Jul 2024 – Oct 2024
 
-Responsive store management system for mobile retail and repair workflows.
+Responsive store management system for mobile retail — covering stock purchasing, sales processing, and repair workflows.
 
 **What makes it interesting:**
 
-* Sell workflow with serial number tracking
-* Bulk stock entry (10,000+ items)
-* Repair/service job system
-* JWT authentication with role levels
-* Dashboard with business metrics
+* Sell workflow with serial number lookup and pending sell list confirmation
+* Bulk stock entry supporting up to **10,000 units** per transaction
+* Repair/service job tracking with full CRUD
+* JWT authentication with two role levels (`admin` / `user`)
+* Dashboard with monthly income bar chart (Recharts) and business summary stats
+* Company settings with upsert pattern (create on first save, update thereafter)
 * Deployed on Ubuntu with PM2
 
-`Next.js` `Node.js` `MongoDB` `Prisma` `TypeScript` `Tailwind CSS`
+`Next.js` `Node.js` `Express` `MongoDB` `Prisma` `TypeScript` `Tailwind CSS` `JWT`
 
 ---
 
