@@ -19,7 +19,7 @@
 
 Full Stack Developer based in **Bangkok, Thailand**, with hands-on experience shipping complete web systems — from database schema design to frontend UI.
 
-I focus on building systems with real complexity: multi-role access control, stateful workflows, conflict-checking logic, and automated processes. My projects go beyond CRUD — solving real business problems such as rental lifecycle management, payment verification, stock reservation systems, and repair workflow tracking.
+I focus on building systems with real complexity: multi-role access control, stateful workflows, conflict-checking logic, and automated processes. My projects go beyond CRUD — solving real business problems such as rental lifecycle management, payment verification, stock reservation systems, repair workflow tracking, live streaming infrastructure, and task orchestration.
 
 * 🎓 **Business Computer** — Mahasarakham University (2021–2025)
 * 🔐 Experienced in **JWT Auth, RBAC, RESTful API design**
@@ -43,6 +43,48 @@ I focus on building systems with real complexity: multi-role access control, sta
 ---
 
 ## Projects
+
+### 📺 StreamLive
+
+`MERN + Next.js` · May 2026
+
+Full-stack live streaming platform with RTMP ingest, HLS playback, real-time chat, and a streamer dashboard.
+
+**What makes it interesting:**
+
+* RTMP ingest via OBS — auto-transcoded to HLS with FFmpeg
+* Low-latency HLS playback using hls.js with Safari native fallback
+* Real-time live chat per stream room via WebSocket with auto-reconnect
+* Live viewer count tracked via RTMP play/done events
+* Streamer dashboard — go live, manage stream, view history, reset stream key
+* Search and filter streams by category with debounced input and pagination
+* SSR meta tags, Open Graph, JSON-LD, sitemap.xml, and robots.txt for SEO
+* Dual roles: `viewer` and `streamer` with role-guarded routes
+
+`Next.js` `Node.js` `Express` `MongoDB` `JWT` `WebSocket` `FFmpeg` `Node-Media-Server` `hls.js`
+
+---
+
+### 📋 Task Manager
+
+`PERN Stack` · Apr 2026
+
+[![Live Demo](https://img.shields.io/badge/Live-Demo-000?style=flat-square&logo=vercel&logoColor=white)](https://task-manager-green-psi.vercel.app/)
+
+Full-stack task management application with JWT authentication, subtask support, drag-and-drop reordering, filtering, and pagination.
+
+**What makes it interesting:**
+
+* Drag-and-drop task reordering persisted to the database via an `order` field
+* Subtask system — create and manage nested tasks inside each task
+* Filter tasks by status and priority with a summary bar showing counts
+* Middleware stack: JWT auth, rate limiting, input sanitization, and request validation
+* Full test coverage — Vitest + React Testing Library (client) and Jest (server)
+* CI pipeline via GitHub Actions
+
+`React` `Node.js` `Express` `PostgreSQL` `Prisma` `Tailwind CSS` `shadcn/ui` `JWT` `Zustand` `Vitest` `Jest`
+
+---
 
 ### 🛒 Next.js E-Commerce Platform
 
@@ -111,7 +153,6 @@ Full-stack rental platform with a Customer App and an Admin Panel — dual codeb
 * Cart with rental duration selection, discount calculation, and auto-return date computation
 * Shop bank accounts displayed at checkout with transfer info submission
 * Wishlist using localStorage (no login required to save items)
-* Product image gallery with multi-image upload
 * **Bulk import via Excel** (products and categories via ExcelJS)
 * Admin dashboard with Bar/Line chart toggle (Chart.js) and 10 summary metric cards
 * Deployed on Ubuntu Linux with PM2
