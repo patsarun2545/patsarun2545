@@ -165,6 +165,8 @@ Full-stack rental platform with a Customer App and an Admin Panel — dual codeb
 
 `MERN Stack` · Jul 2024 – Oct 2024
 
+[![Live Demo](https://img.shields.io/badge/Live-Demo-000?style=flat-square&logo=vercel&logoColor=white)](https://mobile-store-web-jet.vercel.app/)
+
 Responsive store management system for mobile retail — covering stock purchasing, sales processing, and repair workflows.
 
 **What makes it interesting:**
