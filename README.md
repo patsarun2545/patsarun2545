@@ -7,7 +7,7 @@
 *Building production-grade web systems with clean architecture and real business logic*
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-patsarun--kathinthong-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/patsarun-kathinthong)
-[![Portfolio](https://img.shields.io/badge/Portfolio-patsarun2545.github.io-222?style=flat-square&logo=vercel&logoColor=white)](https://patsarun2545.github.io/profile/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-patsarun2545.github.io-222?style=flat-square&logo=vercel&logoColor=white)](https://portfolio-patsarun.vercel.app/)
 [![GitHub](https://img.shields.io/badge/GitHub-patsarun2545-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/patsarun2545)
 [![Email](https://img.shields.io/badge/Email-patsarun2545%40gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](https://mail.google.com/mail/?view=cm&to=patsarun2545@gmail.com)
 
