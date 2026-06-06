@@ -86,6 +86,7 @@ Full-stack task management application with JWT authentication, subtask support,
 * Summary bar showing total, pending, done, and overdue counts
 * Middleware stack: JWT auth, rate limiting (10 req/15min auth, 100 req/15min API), XSS sanitization, request validation
 * Dual-token auth: access token (15min, `localStorage`) + refresh token (7 days, `httpOnly` cookie, stored as SHA-256 hash)
+* Forgot password and reset password via email link (Brevo)
 * Cron job cleans up expired refresh tokens daily at 02:00
 * Full test coverage — Vitest + React Testing Library (client) and Jest + Supertest (server); CI via GitHub Actions
 
@@ -200,6 +201,7 @@ Responsive store management system for mobile retail — covering stock purchasi
 `Next.js 16` · Jun 2026
 
 [![Live Demo](https://img.shields.io/badge/Live-Demo-000?style=flat-square&logo=vercel&logoColor=white)](https://portfolio-patsarun.vercel.app/)
+[![GitHub](https://img.shields.io/badge/GitHub-Repo-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/patsarun2545/portfolio)
 
 A portfolio that manages itself. EN/TH switching, full admin panel, CSRF protection, and Redis rate limiting — on a portfolio site. Why? Click and find out.
 
