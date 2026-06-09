@@ -45,6 +45,31 @@ I focus on building systems with real complexity: multi-role access control, sta
 
 ## Projects
 
+### 🤖 DocuMind-AI
+
+`Next.js Fullstack + AI` · Jun 2026
+
+[![Live Demo](https://img.shields.io/badge/Live-Demo-000?style=flat-square&logo=vercel&logoColor=white)](https://documind-ai-green.vercel.app/)
+[![GitHub](https://img.shields.io/badge/GitHub-Repo-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/patsarun2545/documind-ai)
+
+AI-powered document chat application with RAG pipeline — upload a document, ask questions, get answers with source attribution.
+
+**What makes it interesting:**
+
+* RAG pipeline: parse → chunk (500 words / 50 overlap) → embed → store vectors → semantic search → stream response
+* Vector search using **pgvector cosine distance** (`<=>`) — top-5 relevant chunks per query
+* Streaming AI responses via **Server-Sent Events (SSE)** with source attribution per message
+* Document processing state machine: `PROCESSING → READY / FAILED` with auto-recovery for stuck docs (>10 min)
+* Per-document chat sessions with full message persistence and conversation history
+* Gemini embedding (`gemini-embedding-001`, 3072-dim) + generation (`Gemini 3.1 Flash Lite`)
+* JWT auth in httpOnly cookies; userId-based data isolation for multi-tenant security
+* Rate limiting (auth: 10 req/15min, api: 60 req/1min); Zod validation on all inputs
+* Full test coverage via Jest + GitHub Actions CI; Docker support with `docker-compose`
+
+`Next.js 16` `React 19` `TypeScript` `PostgreSQL` `pgvector` `Prisma` `Tailwind CSS 4` `shadcn/ui` `JWT` `Gemini AI` `Zod` `Jest` `Docker`
+
+---
+
 ### 📺 StreamLive
 
 `MERN + Next.js` · May 2026
